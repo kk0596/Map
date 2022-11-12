@@ -1,0 +1,12 @@
+<br>
+<button type="button" class="btn btn-primary" [disabled]="allowNewUser" (click)="messageClick()">Primary</button> 
+
+<h1>{{message}}</h1>
+<p [innerText]="allowNewUser"></p>
+<br><br>
+<button type="button" class="btn btn-secondary" (click)="onToggle()">Display Details</button>
+<p *ngIf="showSecret"> password == tune</p>
+<div *ngFor=" let logs of log" [ngStyle]=" {backgroundColor: logs >=5 ? 'blue': 'green'}">{{logs}} </div>
+
+
+
